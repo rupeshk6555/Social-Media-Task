@@ -37,7 +37,7 @@ const UserForm = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/users",
+        "https://social-media-task-7xh2.onrender.com/api/users",
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
