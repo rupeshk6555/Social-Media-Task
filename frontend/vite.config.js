@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/api": "http://localhost:5000", // Proxy API calls to the backend server
+      "/api": "https://social-media-task-7xh2.onrender.com", // Proxy API calls to the backend server
     },
   },
 });
