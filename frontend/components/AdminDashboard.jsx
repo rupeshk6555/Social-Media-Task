@@ -9,7 +9,7 @@
 //   useEffect(() => {
 //     const fetchUsers = async () => {
 //       try {
-//         const response = await axios.get("http://localhost:5000/api/users");
+//         const response = await axios.get("https://social-media-task-7xh2.onrender.com/api/users");
 //         setUsers(response.data);
 //         setLoading(false);
 //       } catch (error) {
@@ -36,7 +36,7 @@
 //               {user.images.map((imageUrl, index) => (
 //                 <img
 //                   key={index}
-//                   src={`http://localhost:5000/uploads/${imageUrl}`}
+//                   src={`https://social-media-task-7xh2.onrender.com/uploads/${imageUrl}`}
 //                   alt={`Upload ${index + 1}`}
 //                   style={{ width: "100px", margin: "5px" }}
 //                 />
@@ -64,7 +64,7 @@ const AdminDashboard = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/users");
+        const response = await axios.get("https://social-media-task-7xh2.onrender.com/api/users");
         setUsers(response.data);
         setLoading(false);
       } catch (error) {
@@ -92,7 +92,7 @@ const AdminDashboard = () => {
               {user.images.map((imageUrl, index) => (
                 <img
                   key={index}
-                  src={`http://localhost:5000/uploads/${imageUrl}`}
+                  src={`https://social-media-task-7xh2.onrender.com/uploads/${imageUrl}`}
                   alt={`Upload ${index + 1}`}
                   className="user-image"
                 />
